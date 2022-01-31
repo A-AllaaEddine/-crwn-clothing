@@ -12,7 +12,9 @@ import { createStructuredSelector } from 'reselect';
 
 
 
-const Header = ({ currentUser, hidden }) => (
+const Header = ({ currentUser, hidden }) => {
+    console.log(currentUser);
+    return(
     <div className="header">
         <Link className="logo-container" to="/">
             <Logo className="logo" />
@@ -40,7 +42,7 @@ const Header = ({ currentUser, hidden }) => (
             hidden ? null: <CartDropdown />
         }
     </div>
-)
+)}
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
