@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from 'reselect';
 import { selectCollectionsForPreview } from '../../redux/shop/shop.selectors';
 
-const CollectionsOverview = ({ collections, match}) => {
+const CollectionsOverview = ({ collections }) => {
     return(
     <div className="collections-overview">
         {
